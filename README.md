@@ -31,7 +31,7 @@ npm run dev
 
 A aplicação fica em `http://localhost:3001`.
 
-A tela de novo pagamento está em `http://localhost:3001/payment/new`.
+A tela de novo pagamento está em `http://localhost:3001/payments/new`.
 
 ## 📡 Integração com a API
 
@@ -53,16 +53,16 @@ O frontend envia `POST` para `http://localhost:3000/payments`.
 - `currency` (string, obrigatório): moeda (ex.: `"BRL"`, `"USD"`, `"EUR"`).
 - `paymentMethod` (string, obrigatório): ID do método de pagamento do Stripe (ex.: `pm_card_visa`) [web:197].
 
-Sucesso e erro são exibidos via `alert` (toast pode ser adicionado depois).
+Sucesso e erro são exibidos via o componente `Alert` do shadcn/ui. (será atualizado para toast)
 
 ## 📝 Funcionalidades
 
-Página `/payment/new`:
+Página `/payments/new`:
 
 - Formulário com validação (React Hook Form + Zod).
 - Campos: `amount`, `currency`, `paymentMethod`.
 - Faz `POST` para `http://localhost:3000/payments`.
-- Feedback de sucesso/erro via `alert`.
+- Feedback de sucesso/erro via componente Alert do shadcn/ui.
 
 ## 🧪 Qualidade
 

@@ -28,7 +28,7 @@ import { usePathname } from "next/navigation";
     {
       label: "Dashboard",
       icon: LayoutDashboard,
-      route: "/dashboard",
+      route: "/",
     },
     {
       label: "Pagamentos",

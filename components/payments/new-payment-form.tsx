@@ -41,8 +41,6 @@ const currencies = [
 
 const paymentMethods = [
   { value: "pm_card_visa", label: "Cartão de Crédito (visa teste)" },
-  { value: "pix", label: "PIX" },
-  { value: "boleto", label: "Boleto Bancário" },
 ]
 
 export function NewPaymentForm() {
